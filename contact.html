@@ -7,18 +7,21 @@
   </head>
   <body>
     <h1>Contact</h1>
+    <!-- EMAIL -->
     <div>
       <a href="mailto:juana@neoland.com">Juanan</a>
     </div>
     <div>
       <br />
-      <form>
+      <!-- FORM -->
+      <form method="POST" action="send.html">
         <label for="fname">First name:</label><br />
         <input type="text" id="fname" name="fname" /><br />
         <label for="lname">Last name:</label><br />
         <input type="text" id="lname" name="lname" />
       </form>
       <br />
+      <!-- MAP -->
       <h1>Google Map</h1>
 
       <div id="googleMap" style="width: 100%; height: 400px"></div>
@@ -29,14 +32,16 @@
             center: new google.maps.LatLng(51.508742, -0.12085),
             zoom: 5,
           };
-          var map = new google.maps.Map(
+          const map = new google.maps.Map(
             document.getElementById('googleMap'),
             mapProp
           );
         }
       </script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGGsmB_TkEXXiem2rcVh1Hv1PyC8tN02Y&callback=myMap"></script>
     </div>
   </body>
 </html>
+
+<!-- AIzaSyDGGsmB_TkEXXiem2rcVh1Hv1PyC8tN02Y -->
